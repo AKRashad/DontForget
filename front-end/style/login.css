@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(to right, rgb(247, 0, 255), rgb(112, 2, 185), rgb(247, 0, 255));  
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  width: 30%;
+  background-color: #fdfdfd;
+}
+
+form {
+  height: 320px;
+  
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.username,
+.password {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+/* Apply padding to the input field so the text doesn't get hidden */
+.username input,
+.password input {
+  width: 80%;
+  padding: 10px;
+  padding-top: 20px; /* Added padding to create space for the label */
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* Focus state for input fields */
+.username input:focus,
+.password input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+/* When the input is focused or has a value, keep the label moved up */
+.username input:focus + label,
+.password input:focus + label,
+.username input:not(:placeholder-shown) + label,
+.password input:not(:placeholder-shown) + label {
+  transform: translateY(-22px);
+  color: blue;
+}
+
+/* Label styles */
+.username label,
+.password label {
+  position: absolute;
+  left: 60px;
+  bottom: 17px;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+  background-color: white;
+  padding: 0 5px;
+}
+
+/* When the input is not focused but has content, label stays above */
+.username input:not(:focus):not(:placeholder-shown) + label,
+.password input:not(:focus):not(:placeholder-shown) + label {
+  transform: translateY(-22px);
+  color: blue;
+}
+
+form button {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 20%;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px 0;
+  background-color: rgb(154, 5, 173);
+  color: white;
+  transition: 0.5s;
+}
+
+form button:hover {
+  background-color: #440c50;
+  transform: scale(1.2);
+}

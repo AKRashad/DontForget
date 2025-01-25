@@ -1,0 +1,125 @@
+/* General Body Styling */
+body {
+    background-color: rgba(245, 245, 245, 1);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.main-div {
+    width: 60%;
+    margin: 1% auto;
+    background-color: rgba(207, 248, 248, 1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Section */
+.title-div {
+    background-color: rgba(52, 152, 219, 1);
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.title-div h1 {
+    color: rgba(44, 62, 80, 1);
+    font-size: 24px;
+    display: inline-block;
+}
+
+.title-div span {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: 10px;
+}
+
+/* Add Task Section */
+.add-container {
+    background-color: rgba(46, 204, 113, 1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.add-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.add-container div input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid rgba(200, 200, 200, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-container div button {
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: rgba(52, 152, 219, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-container div button:hover {
+    background-color: rgba(41, 128, 185, 1);
+}
+
+/* Table Section */
+.tableclass {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table thead th {
+    background-color: rgba(12, 223, 124, 1);
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+table tbody td {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 1);
+}
+
+table tbody tr:hover {
+    background-color: rgba(230, 230, 230, 1);
+}
+
+/* Miscellaneous */
+#showAllTask {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgba(52, 152, 219, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+#showAllTask:hover {
+    background-color: rgba(41, 128, 185, 1);
+}
